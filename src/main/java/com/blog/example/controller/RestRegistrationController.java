@@ -27,8 +27,10 @@ import com.blog.example.repository.RegistrationRepository;
 @RequestMapping("/api/registrations")
 public class RestRegistrationController{
 	
+	
 	@Autowired
 	private RegistrationRepository registrationRepository;
+	
 	@GetMapping("/music")
 	public String music() {
 		return "music is playing";
@@ -127,6 +129,8 @@ public class RestRegistrationController{
 	return new ResponseEntity<>(savedReg,HttpStatus.CREATED);
 
 	}
+	
+	
 	}
 	
 
